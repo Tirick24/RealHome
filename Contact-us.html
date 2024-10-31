@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <!-- Custom CSS Links -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact-us.css">
+
+  <!-- Ionicons Link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="RealHome" width="80" height="14" >
+            </div>
+            
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li>
+                        <a href="About-Us.html" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                    <li>
+                        <a href="Upload.html" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="Register.html" class="btn btn-secondary">Get Started</a>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="trur" class="close-icon"></ion-icon>
+
+            </button>
+        </div>
+   </header>
+
+  <main>
+    <!--======= article ========-->
+    
+    <article class="article">
+        <section class="section hero" aria-label="hero">
+            <div class="hero-background">
+                <video autoplay muted loop class="background-video">
+                    <source src="../Responsive-real-estate-landingpage-master/images/Cape Town.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            <div class="container">
+                    <div class="hero-content-text">
+                        <h1 class="h1 hero-title">
+                            Discover your <span class="span">Dream</span> property today with Real<span class="span">Home</span>
+                        </h1>
+                        <section>
+                        <p class="hero-text">
+                            Your trusted real estate companion
+                        </p>
+                        <h2 class="contact-heading">
+                            Contact Us
+                        </h2>
+                        <div class="underline"></div>
+                        </section>
+                    </div>
+            
+            </div>
+        </section>
+    </article>
+    
+
+    <!--======= contact video ========-->
+
+    <section class="section about" id="about" aria-level="about">
+        <div class="container">
+            <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+                <video width="600" height="700" loading="lazy" class="img-cover" autoplay muted loop>
+                    <source src="./images/upload.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    
+                <button class="play-btn" aria-label="play video" onclick="this.previousElementSibling.paused ? this.previousElementSibling.play() : this.previousElementSibling.pause();">
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+    
+            <div class="about-content">
+                <h2 class="about-text">Trusted. Affordable. Transparent</h2>
+                <p class="section-text">RealHome is a trusted, affordable, and transparent real estate platform. It connects you with verified property owners and seekers, eliminates agent fees and commissions to save you money, and provides clear, detailed property information. This ensures a secure, cost-effective, and straightforward real estate experience.</p>
+                <a href="#contact-form" class="btn btn-primary">Contact-us</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--======= contact form ========-->
+
+    <div class="contact-container">
+        <div class="form" id="contact-form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    We’d love to hear from you! Please reach out using the form below, and a member of our RealHome team will get back to you shortly.
+                </p>
+    
+                <div class="info">
+                    <div class="information">
+                        <ion-icon name="location-outline" class="icon"></ion-icon>
+                        <p>18 Rene Str
+                            Bloemfontein, 9301
+                            South Africa
+                        </p>
+                    </div>
+                    <div class="information">
+                        <ion-icon name="mail-outline" class="icon"></ion-icon>
+                        <p>RealHome@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <ion-icon name="call-outline" class="icon"></ion-icon>
+                        <p>012-345-4321</p>
+                    </div>
+                </div>
+    
+                <div class="social-media">
+                    <p class="social-text">Join our community:</p>
+                    <div class="social-icons">
+                        <a href="#" class="ionicons">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#" class="ionicons">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#" class="ionicons">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#" class="ionicons">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <form action="Contact-us.html" autocomplete="off">
+                    <h3 class="contact-title">Contact Us</h3>
+                    <div class="input-container">
+                        <input type="text" id="username" name="name" class="input" required />
+                        <label for="username">Username</label>
+                        <span >Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" class="input" required />
+                        <label for="email">Email</label>
+                        <span >Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" id="phone" name="phone" class="input" required />
+                        <label for="phone">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea focus">
+                        <textarea id="message" name="message" class="input" required></textarea>
+                        <label for="message">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="contact-btn" />
+                </form>
+            </div>
+    
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+        </div>
+    </div><!--  
+    <script>
+        const inputs = document.querySelectorAll(".input");
+
+            function focusFunc() {
+            let parent = this.parentNode;
+            parent.classList.add("focus");
+            }
+
+            function blurFunc() {
+            let parent = this.parentNode;
+            if (this.value == "") {
+                parent.classList.remove("focus");
+            }
+            }
+
+            inputs.forEach((input) => {
+            input.addEventListener("focus", focusFunc);
+            input.addEventListener("blur", blurFunc);
+            });
+
+    </script>-->
+    
+
+   
+
+    <!-- Team Section -->
+    <section class="team-section-custom">
+      <h1 class="section-title">Meet Our Team</h1>
+      <div class="team-wrapper">
+        <div class="team-member-custom">
+          <img src="./images/testimonial1.jpg" alt="Team Member 1">
+          <h3>Tirick Stadhouer</h3>
+          <p>Frontend Designer</p>
+        </div>
+      </div>
+    </section>
+
+ 
+    <!-- Video Section -->
+    
+    <section class="video-section-custom">
+        <h1 class="section-title">Watch Our Introductory Video</h1>
+        <div class="video-wrapper">
+            <video width="560" height="315" controls loop>
+                <source src="./images/Cape.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section-custom">
+        <h1 class="section-title2">Property Gallery</h1>
+        <div class="gallery-wrapper">
+            <img src="./images/img 10  (1).png" alt="Property 1">
+            <img src="./images/img 6 (1).png" alt="Property 2">
+            <img src="./images/img 12.png" alt="Property 3">
+            <img src="./images/img 13 (1).png" alt="Property 4">
+            <img src="./images/img 16 (1).png" alt="Property 5">
+            <img src="./images/img 44.png" alt="Property 6">
+            <img src="./images/img 5 (1).png" alt="Property 7">
+            <img src="./images/img 3.png" alt="Property 8">
+        </div>
+    </section>
+    
+    <!--======= FAQ Section ========-->
+    
+    <section class="faq-section">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>What types of properties can I find on RealHome?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <p class="faq-answer">RealHome offers a diverse selection of properties, including residential homes, apartments, commercial properties, and land available for sale or rent.</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>How do I contact a property owner through RealHome?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <p class="faq-answer">You can easily reach property owners directly through the contact form on each property listing. Just fill in your details, and the owner will respond to you.</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>Are there any fees for using RealHome?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <p class="faq-answer">No, RealHome is completely free for both buyers and sellers, with no hidden fees or commissions involved.</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>How can I list my property on RealHome?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <p class="faq-answer">To list your property, simply create an account on our website and follow the prompts to input your property details, photos, and contact information.</p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>What makes RealHome different from other real estate platforms?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </button>
+                <p class="faq-answer">RealHome connects buyers and sellers directly, removing agent fees and providing a transparent platform for property transactions.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        const buttons = document.querySelectorAll('.faq-button');
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const faqAnswer = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+    
+                faqAnswer.classList.toggle('show');
+                icon.classList.toggle('rotate');
+            });
+        });
+    </script>
+    
+    
+              <!--======= FOOTER ========-->
+              <footer class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="footer-brand">
+                            <div class="logo-container">
+                                <img src="./images/logo.png" alt="RealHome" width="80" height="14">
+                            </div>
+                            <p class="footer-text">
+                                Discover your dream property today with RealHome
+                            </p>
+                        </div>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Company</p>
+                            </li>
+                            <li>
+                                <a href="About-Us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">About us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Upload.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listings.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Pricing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Contact-us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Login</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="User dashboard.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="agent dasboard.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Agent</span>
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">More Links</p>
+                            </li>
+                            <li>
+                                <a href="listings.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Listing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Contact-us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Contact Details</p>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address class="address">
+                                    18 Rene Str <br>
+                                    Bloemfontein, 9301 <br>
+                                    South Africa
+                                </address>
+                            </li>
+            
+                            <li class="footer-item">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13412.241747004298!2d26.1947392!3d-29.130752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95e2f4b2f8b0fb%3A0x8e3b2a44d33e38e!2s18%20Rene%20Str%2C%20Bloemfontein%2C%209301%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1696583249177!5m2!1sen!2sus"
+                                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <a href="mailto:RealHome@gmail.com" class="footer-link">RealHome@gmail.com</a>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <a href="tel:012-345-4321" class="footer-link">012-345-4321</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="copyright">
+                            &copy; 2024 RealHome. All rights reserved
+                        </p>
+            
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+  </main>
+
+  <script src="./js/main.js"></script>
+
+</body>
+</html>

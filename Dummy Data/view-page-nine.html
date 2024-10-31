@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Property</title>
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="/WIL/Responsive-real-estate-landingpage-master/css/style.css">
+    <link rel="stylesheet" href="/WIL/Responsive-real-estate-landingpage-master/css/view-page.css">
+
+    
+    
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <main>
+    <header class="header" data-header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="/WIL/Responsive-real-estate-landingpage-master/images/logo.png" alt="RealHome" width="80" height="14">
+            </div>
+            
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="/WIL/Responsive-real-estate-landingpage-master/index.html" class="navbar-link" data-nav-link>Home</a></li>
+                    <li><a href="/WIL/Responsive-real-estate-landingpage-master/About-Us.html" class="navbar-link" data-nav-link>About Us</a></li>
+                    <li><a href="/WIL/Responsive-real-estate-landingpage-master/Upload.html" class="navbar-link" data-nav-link>Services</a></li>
+                    <li><a href="/WIL/Responsive-real-estate-landingpage-master/Contact-us.html" class="navbar-link" data-nav-link>Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="/WIL/Responsive-real-estate-landingpage-master/login.html" class="btn btn-secondary">Get Started</a>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="property-view">
+            <div class="property-details">
+                <div class="image-gallery">
+                    <div class="main-image">
+                        <img id="current-image" src="/WIL/Responsive-real-estate-landingpage-master/images/img 16 (1).png" alt="House at 1235 Regal Ave" class="img-cover">
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail" onclick="changeMainImage('/WIL/Responsive-real-estate-landingpage-master/images/img 16 (2).png')">
+                            <img src="/WIL/Responsive-real-estate-landingpage-master/images/img 16 (2).png" alt="Property Image 1">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage('/WIL/Responsive-real-estate-landingpage-master/images/img 16 (3).png')">
+                            <img src="/WIL/Responsive-real-estate-landingpage-master/images/img 16 (3).png" alt="Property Image 2">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage('/WIL/Responsive-real-estate-landingpage-master/images/img 16 (4).png')">
+                            <img src="/WIL/Responsive-real-estate-landingpage-master/images/img 16 (4).png" alt="Property Image 3">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage('/WIL/Responsive-real-estate-landingpage-master/images/img 16 (5).png')">
+                            <img src="/WIL/Responsive-real-estate-landingpage-master/images/img 16 (5).png" alt="Property Image 4">
+                        </div>
+                    </div>
+                </div>
+        
+                <h3 class="property-name">1235 Regal Ave, Sandton, Gauteng, South Africa</h3>
+                <p class="property-location">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <span>1235 Regal Ave, Sandton, Gauteng, South Africa</span>
+                </p>
+        
+                <div class="property-card">
+                    <div class="property-info">
+                        <div class="info-item">
+                            <ion-icon name="pricetag-outline"></ion-icon>
+                            <span class="property-price">R3,000,000</span>
+                        </div>
+                        <div class="info-item">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <span class="property-owner">John Doe (Owner)</span>
+                        </div>
+                        <div class="info-item">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <a href="tel:0123456789">012 345 6789</a>
+                        </div>
+                        <div class="info-item">
+                            <ion-icon name="business-outline"></ion-icon>
+                            <span>Residential Property</span>
+                        </div>
+                        <div class="info-item">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                            <span>Available Now</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <h3 class="section-title1">Details</h3>
+                <div class="details-container">
+                    <div class="details-box">
+                        <h4>Property Features</h4>
+                        <p><ion-icon name="cube-outline"></ion-icon><span>Area: <span>5,000 sq ft</span></span></p>
+                        <p><ion-icon name="checkmark-circle-outline"></ion-icon><span>Status: <span>Available Now</span></span></p>
+                        <p><ion-icon name="bed-outline"></ion-icon><span>Bedrooms: <span>5</span></span></p>
+                        <p><ion-icon name="man-outline"></ion-icon><span>Bathrooms: <span>4</span></span></p>
+                        <p><ion-icon name="checkmark-circle-outline"></ion-icon><span>Furnishing: <span>Fully Furnished</span></span></p>
+                    </div>
+                    <div class="details-box">
+                        <h4>Additional Information</h4>
+                        <p><ion-icon name="key-outline"></ion-icon><span>Parking: <span>Available</span></span></p>
+                        <p><ion-icon name="hourglass-outline"></ion-icon><span>Lease Duration: <span>Negotiable</span></span></p>
+                    </div>
+                </div>
+        
+                <h3 class="section-title1">Amenities</h3>
+                <div class="amenities-container">
+                    <div class="amenities-box">
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>High-Speed Internet</span></p>
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>Modern Kitchen</span></p>
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>Big Yard</span></p>
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>Pet Friendly</span></p>
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>Security System</span></p>
+                    </div>
+                    <div class="amenities-box">
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>Air Conditioning</span></p>
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>Storage Space</span></p>
+                        <p><ion-icon name="checkmark-outline"></ion-icon><span>Outdoor Area</span></p>
+                    </div>
+                </div>
+        
+                <h3 class="section-title1">Description</h3>
+                <p class="property-description">This beautiful residential property located at 1235 Regal Ave offers 5,000 sq ft of living space. Featuring 5 bedrooms and 4 bathrooms, it’s perfect for families and pet owners. Enjoy a fully furnished home with a modern kitchen, a big yard for outdoor activities, and secure parking. Close to public transport for added convenience.</p>
+        
+                <form action="" method="post" class="form-1">
+                    <input type="submit" value="Add to Wishlist" name="save" class="wishlist-button">
+                </form>
+            </div>
+        </section>
+        
+        <script>
+            function changeMainImage(imageSrc) {
+                const mainImage = document.getElementById('current-image');
+                mainImage.src = imageSrc; // Change the main image source
+            }
+        </script>
+        
+        
+        
+    </main>
+    
+
+    
+            <!--======= FOOTER ========-->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="footer-brand">
+                            <div class="logo-container">
+                                <img src="/WIL/Responsive-real-estate-landingpage-master/images/logo.png" alt="RealHome" width="80" height="14">
+                            </div>
+                            <p class="footer-text">
+                                Discover your dream property today with RealHome
+                            </p>
+                        </div>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Company</p>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/About-Us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">About us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/Upload.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/listings.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Pricing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/Contact-us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/login.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Login</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/User dashboard.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/agent dasboard.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Agent</span>
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">More Links</p>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/listings.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Listing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/WIL/Responsive-real-estate-landingpage-master/Contact-us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Contact Details</p>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address class="address">
+                                    18 Rene Str <br>
+                                    Bloemfontein, 9301 <br>
+                                    South Africa
+                                </address>
+                            </li>
+            
+                            <li class="footer-item">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13412.241747004298!2d26.1947392!3d-29.130752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95e2f4b2f8b0fb%3A0x8e3b2a44d33e38e!2s18%20Rene%20Str%2C%20Bloemfontein%2C%209301%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1696583249177!5m2!1sen!2sus"
+                                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <a href="mailto:RealHome@gmail.com" class="footer-link">RealHome@gmail.com</a>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <a href="tel:012-345-4321" class="footer-link">012-345-4321</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="copyright">
+                            &copy; 2024 RealHome. All rights reserved
+                        </p>
+            
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+            
+    <!-- JS Link -->
+    <script src="view-property.js" defer></script>
+    
+</body>
+</html>

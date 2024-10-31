@@ -1,0 +1,167 @@
+
+
+/*===== Register =====*/
+
+.h2-hero-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+}
+
+.scroll-button {
+    display: inline-block;
+    background-color: rgba(211, 170, 134);
+    color: whitesmoke;
+    max-width: 150px;
+    margin-top: 15px;
+    padding: 8px 16px; 
+    border-radius: 30px; 
+    text-decoration: none; 
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 14px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+.scroll-button:hover {
+    color: whitesmoke;
+    background-color: rgb(81, 81, 81); 
+    transform: scale(1.05); 
+}
+
+
+.underline {
+    width: 200px; 
+    height: 4px; 
+    background-color: rgba(211, 170, 134);
+    margin: 0 auto;
+    margin-top: 10px; 
+}
+
+
+.review-form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    background: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    min-height: 425px;
+    transition: transform 0.3s ease;
+    margin-top: -30px;
+}
+
+.review-form-container:hover {
+    transform: scale(1.05); 
+}
+
+.create {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(29, 29, 29);
+}
+
+/* Input Fields */
+
+.box {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+   border: 1px solid rgba(211, 170, 134);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+
+.box:hover {
+    border-color: rgb(29, 29, 29);
+    outline: none;
+}
+
+.underline-2 {
+    width: 200px; 
+    height: 4px; 
+    background-color: rgba(211, 170, 134);
+    margin: 0 auto;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
+
+/* Register Link */
+
+.register-btn-text {
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+    line-height: 1.5;
+}
+
+.wrapper p{
+    margin: 20px 0 10px 0;
+    line-height: 30px;
+}
+
+.register-btn-text a {
+    color: rgb(29, 29, 29);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.register-btn-text a:hover {
+    color: rgba(211, 170, 134);
+}
+
+.register-btn {
+    display: block;
+    background-color: rgb(81, 81, 81);
+    color: whitesmoke;
+    font-weight: 500;
+    width: auto;
+    padding: 12px 28px;
+    border-radius: 20px;
+    margin: 5px auto 0; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.register-btn:hover {
+    color: whitesmoke;
+    background-color: rgba(211, 170, 134); 
+    transform: scale(1.05);
+}
+
+.wrapper-abt {
+    position: relative;   
+ }
+ 
+ .background-video {
+    position: absolute; 
+    top: 50%;          
+    left: 50%;         
+    width: 100%;       
+    height: 120%;      
+    z-index: -1;       
+    transform: translate(-50%, -50%); 
+    object-fit: cover; 
+ }
+ 
+
+/* Responsive Design */
+
+@media (max-width: 500px) {
+    .review-form-container {
+        padding: 20px;     
+    }
+    
+    .register-btn {
+        width: 100%;       
+        padding: 12px;     
+    }
+}

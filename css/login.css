@@ -1,0 +1,127 @@
+
+/*===== login =====*/
+
+.login-title {
+
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.underline {
+    width: 200px; 
+    height: 4px; 
+    background-color: rgba(211, 170, 134);
+    margin: 0 auto;
+    margin-top: 5px auto; 
+}
+
+.login-container {
+    width: 300px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background: whitesmoke; 
+    border: 1.5px solid transparent; 
+    border-radius: 8px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+    border-color: rgb(150, 122, 97); 
+    box-shadow: 0 0 5px rgba(150, 122, 97, 0.5);
+}
+
+
+
+
+
+.user-login-form h3 {
+    text-align: center;
+    color: rgb(81, 81, 81);
+    margin-bottom: 15px;
+}
+
+.email,
+.password {
+    color: rgb(81, 81, 81);
+    font-weight: 600;
+}
+
+.input-box {
+    border: 2px solid rgba(211, 170, 134);
+    border-radius: 15px; 
+    padding: 10px; 
+    outline: none; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.input-box:hover {
+    border: 2px solid rgb(68, 64, 59);
+}
+
+.input-box::placeholder {
+    color: #999; 
+    opacity: 1; 
+}
+
+
+
+.user-login-form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.password {margin-top: 10px; }
+
+.register-button {
+    display: inline-block; 
+    background-color: transparent; 
+    color: rgb(81, 81, 81); 
+    text-decoration: underline;
+    margin-top: 10px; 
+    margin-bottom: 15px;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: rgba(211, 170, 134);
+}
+
+.register-btn-text {
+    text-align: center;
+    margin-top: 10;
+}
+
+
+.register-button:hover {
+    color: rgba(211, 170, 134);
+}
+
+.submit-button:hover {
+    background-color: rgba(211, 170, 134); 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .h2-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+    
+        <!-- Custom CSS Link -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/login.css">
+    
+    
+        <!-- Ionicons Link -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+        <!-- Google Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+
+    <header class="header" data-header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="RealHome" width="80" height="14" >
+            </div>
+            
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li>
+                        <a href="About-Us.html" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                    <li>
+                        <a href="Upload.html" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="Register.html" class="btn btn-secondary">Get Started</a>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="trur" class="close-icon"></ion-icon>
+
+            </button>
+        </div>
+   </header>
+
+<main>
+    <article class="article">
+        <section class="section hero" aria-label="hero">
+            <div class="container">
+                <div class="hero-bg">
+                    <div class="hero-content">
+                        <h1 class="login-title">Login</h1>
+                        <div class="underline"></div>
+                        <div class="underline"></div>
+    
+                        <section class="login-container">
+                            <form id="login-form" class="user-login-form">
+                                <h3>Welcome back!</h3>
+                                <label for="user-email" class="email">Email</label>
+                                <input type="email" id="user-email" name="email" required maxlength="50" placeholder="Enter your email" class="input-box">
+                                
+                                <label for="user-password" class="password">Password</label>
+                                <input type="password" id="user-password" name="pass" required maxlength="20" placeholder="Enter your password" class="input-box">
+    
+                                <p class="register-btn-text">Already have an account? <a href="register.html" class="register-button">Register now</a></p>
+                                
+                                <input type="submit" value="Log In" class="btn">
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    
+    <script>
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent the default form submission
+    
+            const email = document.getElementById('user-email').value;
+            const password = document.getElementById('user-password').value;
+    
+            const response = await fetch('http://localhost:5000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username: email, password: password }),
+            });
+    
+            if (response.ok) {
+                const data = await response.json();
+                alert('Login successful! Token: ' + data.access_token);
+                // Store the token in localStorage or redirect the user
+                localStorage.setItem('token', data.access_token);
+                // Redirect to a different page if needed
+            } else {
+                const data = await response.json();
+                alert(data.message);
+            }
+        });
+    </script>
+    
+</main>
+
+<!--======= FOOTER ========-->
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="RealHome" width="80" height="14">
+                </div>
+                <p class="footer-text">
+                    Discover your dream property today with RealHome
+                </p>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Company</p>
+                </li>
+                <li>
+                    <a href="About-Us.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">About us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Upload.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="listings.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Pricing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Contact-us.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Contact us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="User dashboard.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="agent dasboard.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Agent</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">More Links</p>
+                </li>
+                <li>
+                    <a href="listings.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Contact-us.html" class="footer-link">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                        <span class="span">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Contact Details</p>
+                </li>
+
+                <li class="footer-item">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <address class="address">
+                        18 Rene Str <br>
+                        Bloemfontein, 9301 <br>
+                        South Africa
+                    </address>
+                </li>
+
+                <li class="footer-item">
+                    <iframe class="map-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13412.241747004298!2d26.1947392!3d-29.130752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95e2f4b2f8b0fb%3A0x8e3b2a44d33e38e!2s18%20Rene%20Str%2C%20Bloemfontein%2C%209301%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1696583249177!5m2!1sen!2sus"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+
+                <li class="footer-item">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <a href="mailto:RealHome@gmail.com" class="footer-link">RealHome@gmail.com</a>
+                </li>
+
+                <li class="footer-item">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a href="tel:012-345-4321" class="footer-link">012-345-4321</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright">
+                &copy; 2024 RealHome. All rights reserved
+            </p>
+
+            <ul class="social-list">
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    <!-- Custom JS Link -->
+    <script src="js/main.js" defer></script>
+    
+
+</body>
+</html>

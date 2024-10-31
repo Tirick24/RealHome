@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealHome</title>
+
+
+  <!--======== custom css link =========-->
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!--========= google font link ========-->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+   <header class="header" data-header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="RealHome" width="80" height="14" >
+            </div>
+            
+            <nav class="navbar container" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li>
+                        <a href="About-Us.html" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+                    <li>
+                        <a href="Upload.html" class="navbar-link" data-nav-link>Services</a>
+                    </li>
+                    <li>
+                        <a href="Contact-us.html" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="Register.html" class="btn btn-secondary">Get Started</a>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="trur" class="close-icon"></ion-icon>
+
+            </button>
+        </div>
+   </header>
+
+   <!--======== main =========-->
+   <main>
+        <article class="article">
+            <section class="section hero" aria-label="hero">
+                <div class="container">
+                    <div class="hero-bg">
+                        <div class="hero-content">
+                            <h1 class="h1 hero-title">
+                                Discover your <span class="span">Dream</span> property today with Real<span class="span">Home</span>
+                            </h1>
+                            <section>
+                            <p class="hero-text">
+                                Your trusted real estate companion
+                            </p>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="hero-form-wrapper">
+                        <div class="form-tab">
+                            <button class="tab-btn active" data-tab-btn>Buy</button>
+                            <button class="tab-btn " data-tab-btn>Sell</button>
+                            <button class="tab-btn " data-tab-btn>Rent</button>
+                        </div>
+
+                        <form action="" class="hero-form">
+                            <div class="input-wrapper">
+                                <label for="search" class="input-label">Search: *</label>
+                                <input type="search" name="search" id="search" placeholder="Search your home" required class="input-field">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="category" class="input-label">Select Categories</label>
+                                <select name="category" id="category" class="dropdown-list">
+                                    <option value="house">House</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="offices">Offices</option>
+                                    <option value="townhome">Townhome</option>
+                                    <option value="loft">Loft</option>
+                                    <option value="commercial-properties">Commercial Properties</option>
+                                    <option value="agricultural-properties">Agricultural Properties</option>
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="min-price" class="input-label">Min Price :</label>
+                                <select name="min-price" id="min-price" class="dropdown-list">
+                                    <option value="min price">Min Price</option>
+                                    <option value="4500">R4,500</option>
+                                    <option value="5000">R5,000</option>
+                                    <option value="5500">R5,500</option>
+                                    <option value="6000">R6,000</option>
+                                    <option value="6500">R6,500</option>
+                                    <option value="7000">R7,000</option>
+                                    <option value="7500">R7,500</option>
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="max-price" class="input-label">Max Price :</label>
+                                <select name="max-price" id="max-price" class="dropdown-list">
+                                    <option value="max price">Max Price</option>
+                                    <option value="250000">R250,000</option>
+                                    <option value="350000">R350,000</option>
+                                    <option value="400000">R400,000</option>
+                                    <option value="4400000">R4,400,000</option>
+                                    <option value="500000">R500,000</option>
+                                    <option value="550000">R550,000</option>
+                                    <option value="5500000">R5,500,000</option>
+                                    <option value="6000000">POA</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Search now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--========== Contact Form ==========-->
+            
+            <section class="section about" id="about" aria-level="about">
+                <div class="container">
+                    <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+                        <video width="600" height="700" loading="lazy" class="img-cover" autoplay muted loop>
+                            <source src="./images/upload.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+            
+                        <button class="play-btn" aria-label="play video" onclick="this.previousElementSibling.paused ? this.previousElementSibling.play() : this.previousElementSibling.pause();">
+                            <ion-icon name="play" aria-hidden="true"></ion-icon>
+                        </button>
+                    </div>
+            
+                    <div class="about-content">
+                        <h2 class="about-text">Trusted. Affordable. Transparent</h2>
+                        <p class="section-text">RealHome is a trusted, affordable, and transparent real estate platform. It connects you with verified property owners and seekers, eliminates agent fees and commissions to save you money, and provides clear, detailed property information. This ensures a secure, cost-effective, and straightforward real estate experience.</p>
+                        <a href="#contact-form" class="btn btn-primary">Contact-us</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== SECTION ==========-->
+            <section class="section service" id="service" aria-label="service">
+                <div class="container">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-text">Let RealHome help you find your next home with ease and confidence. Whether you’re buying, selling, or renting, our platform offers a seamless experience with the support of our talented agents. Discover your dream property today with RealHome.</p>
+                    <ul class="service-list">
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3 card-title">Evaluate Property</h3>
+                                <p class="card-text">
+                                    RealHome evaluates your property by combining market analysis, detailed property features, professional appraisals, and user input. This comprehensive approach ensures an accurate and fair valuation, helping you make informed decisions whether you’re buying, selling, or renting.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <ion-icon name="briefcase-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3 card-title">Meeting With Agent</h3>
+                                <p class="card-text">
+                                    RealHome’s agents provide comprehensive property management services, including initial consultations, property assessments, tailored marketing strategies, showings, tenant screening, negotiation, and ongoing management. They ensure your property is well-managed and your real estate goals are efficiently achieved
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <ion-icon name="key-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3 card-title">Close The Deal</h3>
+                                <p class="card-text">
+                                    RealHome helps you seal the deal by assisting with mortgage pre-approval, crafting competitive offers, negotiating terms, coordinating closing steps, managing paperwork, and providing continuous support. This ensures a smooth and successful transaction process.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--=========== PROPERTIES ===========-->
+
+            <section class="section property" id="property" aria-label="property">
+                <div class="container">
+                    <h2 class="h2 section-title">Featured Properties</h2>
+                    <p class="section-text">
+                        Unlock your dream property today
+                    </p>
+                    <ul class="property-list">
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 9.png" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-four.html" class="card-title">1234 Mockingbird Lane, Bloemfontein, Free State, South Africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">1 480 000 m²</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">4 Beds</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Baths</span>
+                                        </li>
+                                    </ul>
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R7,400,000</span>
+                                        </div>
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 3.png" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-two.html" class="card-title">5678 Elm Street, Sandton, Johannesburg, Gauteng, 2196, South africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">1,800 sq ft</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R30,000</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 44.png" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-three.html" class="card-title">7890 Riverbank Road, Gariep Dam, Free State, South Africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">3,000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">4 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R45,000</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+                                    
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 5 (1).png" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-eight.html" class="card-title">5 Helland Bridge, Cape Town, Western Cape, South Arica</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">7500sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">3 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">2 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R60,000</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 6 (1).png" width="800px" height="533" loading="lazy" alt="Office Building" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-seven.html" class="card-title">53 Main St, Cape Town, Western Cape, South Africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">50,000 sq ft</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">N/A</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">10 Baths</span>
+                                        </li>
+                                    </ul>
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R7,393,500</span>
+                                        </div>
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+                                                <span>5.0 (24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 10  (1).png" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-five.html" class="card-title"> 4567 Goldfield Avenue, Cape Town, Western Cape, South Africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+
+                                            <span class="item-text">6000sqf</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">6 Beds</span>
+                                        </li>
+
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">5 Baths</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R348,300</span>
+                                        </div>
+
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--new property-->
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 16 (1).png" width="800px" height="533" loading="lazy" alt="House at 1235 Regal Ave" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-nine.html" class="card-title">1235 Regal Ave, Sandton, Gauteng, South Africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">5,000 sq ft</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">5 Bedrooms</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">4 Baths</span>
+                                        </li>
+                                    </ul>
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R3,000,000</span>
+                                        </div>
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+                                                <span>5.0 (24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </li>
+
+
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 13 (1).png" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-six.html" class="card-title">49 Consurv Ave, Gqeberha, Eastern Cape, South Africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+        
+                                            <span class="item-text">1500sqf</span>
+                                        </li>
+        
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">5 Beds</span>
+                                        </li>
+        
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">5 Baths</span>
+                                        </li>
+                                    </ul>
+        
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R209,000</span>
+                                        </div>
+        
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+        
+                                                <span>5.0(24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <li>
+                            <div class="property-card">
+                                <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                    <img src="images/img 12.png" width="800px" height="533" loading="lazy" alt="" class="img-cover">
+                                </figure>
+                                <button class="card-action-btn" aria-label="add to favourite">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <a href="/WIL/Responsive-real-estate-landingpage-master/Dummy Data/view-page-one.html" class="card-title">49 Consett Rd, Sandton, Gauteng, South Africa</a>
+                                    </h3>
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="cube-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">80000 sqf</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">20 offices</span>
+                                        </li>
+                                        <li class="card-item">
+                                            <div class="item-icon">
+                                                <ion-icon name="man-outline"></ion-icon>
+                                            </div>
+                                            <span class="item-text">10 Baths</span>
+                                        </li>
+                                    </ul>
+                                    <div class="card-meta">
+                                        <div>
+                                            <span class="meta-title">Price</span>
+                                            <span class="meta-text">R3,000,000</span>
+                                        </div>
+                                        <div>
+                                            <span class="meta-title">Rating</span>
+                                            <span class="meta-text">
+                                                <div class="rating-wrapper">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </div>
+                                                <span>5.0 (24)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </section>
+
+            <script>
+                const favoriteButtons = document.querySelectorAll('.card-action-btn');
+            
+                favoriteButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const icon = button.querySelector('ion-icon');
+            
+                        if (icon.name === 'heart-outline') {
+                            icon.name = 'heart'; // Change to filled heart
+                            // Add to favorites logic here
+                        } else {
+                            icon.name = 'heart-outline'; // Change back to outline
+                            // Remove from favorites logic here
+                        }
+                    });
+                });
+            </script>
+
+                   
+            <!--=========== TESTIMONY ==========-->
+
+            <section class="section video-section">
+                <video autoplay muted loop>
+                    <source src="./images/Nature.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content-wrapper">
+                    <div class="text-box">
+                        <h2 class="thought-title">Thought of the Day</h2>
+                        <div class="description">
+                            <p>Every day brings new opportunities to grow and learn. Embrace the challenges and cherish the moments that shape who you are. Life is a beautiful journey filled with lessons that lead you to your true self.</p>
+                            <div class="testimonial flex">
+                                <div class="avatar">
+                                    <img src="./images/testimonial1.jpg" alt="James Carter">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h5>James Carter</h5>
+                                    <h5>Creative Director</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+
+            <!--========= CONTACT =========-->
+
+            <section class="contact-section" id="contact" aria-label="contact">
+                <div class="contact-container">
+                    <h2 class="contact-title">Have a Question? Get in Touch</h2>
+
+                    <p class="contact-description">
+                        Discover your dream property today with RealHome
+                    </p>
+                    <button class="contact-button">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <span class="button-text"><a href="Contact-us.html">Contact Us</a></span>
+                    </button>
+                </div>
+            </section>
+
+
+            <!--======= FOOTER ========-->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="footer-brand">
+                            <div class="logo-container">
+                                <img src="./images/logo.png" alt="RealHome" width="80" height="14">
+                            </div>
+                            <p class="footer-text">
+                                Discover your dream property today with RealHome
+                            </p>
+                        </div>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Company</p>
+                            </li>
+                            <li>
+                                <a href="About-Us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">About us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Upload.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Services</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listings.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Pricing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Contact-us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Login</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="User dashboard.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="agent dasboard.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Agent</span>
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">More Links</p>
+                            </li>
+                            <li>
+                                <a href="listings.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Listing</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Contact-us.html" class="footer-link">
+                                    <ion-icon name="chevron-forward"></ion-icon>
+                                    <span class="span">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer-list-title">Contact Details</p>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <address class="address">
+                                    18 Rene Str <br>
+                                    Bloemfontein, 9301 <br>
+                                    South Africa
+                                </address>
+                            </li>
+            
+                            <li class="footer-item">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13412.241747004298!2d26.1947392!3d-29.130752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95e2f4b2f8b0fb%3A0x8e3b2a44d33e38e!2s18%20Rene%20Str%2C%20Bloemfontein%2C%209301%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1696583249177!5m2!1sen!2sus"
+                                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <a href="mailto:RealHome@gmail.com" class="footer-link">RealHome@gmail.com</a>
+                            </li>
+            
+                            <li class="footer-item">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <a href="tel:012-345-4321" class="footer-link">012-345-4321</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="copyright">
+                            &copy; 2024 RealHome. All rights reserved
+                        </p>
+            
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            
+
+            <!--=========== BACK-TO-TOP ==========-->
+            <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+                <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+            </a>
+        </article>
+   </main>
+    
+  <!--========= custom js link =========-->
+  <script src="js/main.js" defer></script>
+
+  <!--=========== ionicon link ==========-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
